@@ -13,24 +13,16 @@ const GetStock6Sign = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        setStock_id(stock_id);
-        
-        setUrl(`https://stock6-restfulex.onrender.com/api/Stock6Sign202304/getstockinfo/${stock_id}`);
-
-          
+        setStock_id(stock_id);        
+        setUrl(`https://stock6-restfulex.onrender.com/api/Stock6Sign202304/getstockinfo/${stock_id}`);          
         };
           
       
 
       
 
-const handleClick = () => {
-        //event.preventDefault();
-        //setStock_id(stock_id);
-        
-        //setUrl(`https://stock6-restfulex.onrender.com/api/Stock6Sign202304/getstockinfo/${stock_id}`);
-        console.log(`最新得到網址為${url}`);
-        
+const fetchData = () => {        
+        console.log(`最新得到網址為${url}`);       
         fetch(url) 
         .then(data => data.json())
         .then(response => {
@@ -47,17 +39,11 @@ const handleClick = () => {
         });  
       };
 
-useEffect(handleClick,[url]);
+useEffect(fetchData,[url]);
 
       
 return (
     <div>
-
-<br />
-<div>
-    <button onClick = {handleClick}>Renew</button>
-    </div>
-    <br />
       <div>
     <form onSubmit={handleSubmit}>
       <input
@@ -82,8 +68,9 @@ return (
     </div>
 
     <div>
-      <h1>{url}</h1>
+
         <h1>{stock_id}</h1>
+        <h1>{url}</h1>
         <h1>{stock_name}</h1>
         <h1>{newest_season}</h1>
     </div>
