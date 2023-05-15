@@ -1,6 +1,6 @@
 import React from "react";
 //import './App.css'
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 
 
 const GetStock6Sign = () => {
@@ -22,11 +22,11 @@ const GetStock6Sign = () => {
           console.log(cStockName);
           console.log(cNewestSeason);
         setStock_name(cStockName);
-        
+        console.log(`最新得到股票名稱為為${stock_id}`);
           
           
         });  
-    useEffect(handleSubmit, stock_name);   
+      
 
       }
 
