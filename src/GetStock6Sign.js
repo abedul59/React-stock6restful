@@ -23,8 +23,8 @@ const GetStock6Sign = () => {
           console.log(cNewestSeason);
 
         setStock_name(cStockName);
-        console.log(`1. 最新得到股票名稱為為${event.target.value}`);
-        console.log(`2. 最新得到股票名稱為為${stock_id}`);
+        //console.log(`1. 最新得到股票名稱為${event.target.value}`);
+        console.log(`2. 最新得到股票名稱為${stock_id}`);
           
           
         });  
@@ -32,6 +32,11 @@ const GetStock6Sign = () => {
 
       }
 
+
+
+
+
+      
 return (
     <div>
     <form onSubmit={handleSubmit}>
