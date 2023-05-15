@@ -13,6 +13,8 @@ const GetStock6Sign = () => {
         //setStock_id(stock_id);
         
         setUrl(`https://stock6-restfulex.onrender.com/api/Stock6Sign202304/${stock_id}`);
+        console.log(`最新得到網址為${url}`);
+        
         fetch(url) 
         .then(data => data.json())
         .then(response => {
@@ -37,8 +39,10 @@ return (
         name="stock_id"
         value={stock_id}
         placeholder="stock_id"
-        onChange={(event) =>
+        onChange={(event) => {
           setStock_id(event.target.value)
+          console.log(`最新股票代號為${stock_id}`);
+        }
         }
       />
       <br />
