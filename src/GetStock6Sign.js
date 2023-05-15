@@ -56,6 +56,7 @@ return (
     </form>
 
     <div>
+      <h1>{url}</h1>
         <h1>{stock_id}</h1>
         <h1>{stock_name}</h1>
     </div>
