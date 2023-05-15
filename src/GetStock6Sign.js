@@ -24,9 +24,9 @@ const GetStock6Sign = () => {
           console.log(cNewestSeason);
           */
 
-        setStock_name(cStockName);
+        //setStock_name(cStockName);
         //console.log(`1. 最新得到股票名稱為${event.target.value}`);
-        console.log(`2. 最新得到股票名稱為${stock_id}`);
+        //console.log(`2. 最新得到股票名稱為${stock_id}`);
           
           
         };
@@ -57,7 +57,7 @@ const handleClick = () => {
         });  
       
 
-      }
+      };
 
 
 
@@ -90,6 +90,7 @@ return (
 <div>
     <button onClick = {handleClick}>Renew</button>
     </div>
+    <br />
     <div>
       <h1>{url}</h1>
         <h1>{stock_id}</h1>
