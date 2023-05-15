@@ -85,7 +85,9 @@ return (
 
     </form>
 
-    <button type="buton" onClick = {handleClick}>Renew</button>
+    <br></br>
+
+    <button onClick = {handleClick}>Renew</button>
 
     <div>
       <h1>{url}</h1>
