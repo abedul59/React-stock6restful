@@ -64,6 +64,7 @@ const handleClick = () => {
       
 return (
     <div>
+      <div>
     <form onSubmit={handleSubmit}>
       <input
         type="text"
@@ -84,11 +85,11 @@ return (
 
 
     </form>
-
-    <br></br>
-
+    </div>
+    <br />
+<div>
     <button onClick = {handleClick}>Renew</button>
-
+    </div>
     <div>
       <h1>{url}</h1>
         <h1>{stock_id}</h1>
