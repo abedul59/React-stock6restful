@@ -12,7 +12,7 @@ const GetStock6Sign = () => {
         event.preventDefault();
         //setStock_id(stock_id);
         
-        setUrl(`https://stock6-restfulex.onrender.com/api/Stock6Sign202304/${stock_id}`);
+        setUrl(`https://stock6-restfulex.onrender.com/api/Stock6Sign202304/getstockinfo/${stock_id}`);
         console.log(`最新得到網址為${url}`);
         
         fetch(url) 
