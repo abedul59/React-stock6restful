@@ -41,7 +41,8 @@ return (
         placeholder="stock_id"
         onChange={(event) => {
           setStock_id(event.target.value)
-          console.log(`最新股票代號為${stock_id}`);
+          console.log(`1. 最新股票代號為${event.target.value}`);
+          console.log(`2. 最新股票代號為${stock_id}`);
         }
         }
       />
