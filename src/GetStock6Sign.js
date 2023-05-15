@@ -4,7 +4,7 @@ import {useState} from 'react';
 
 
 const GetStock6Sign = () => {
-    const [stock_id, setStock_id] = useState("");
+    //const [stock_id, setStock_id] = useState("");
     const [stock_name, setStock_name] = useState("");
     const [url, setUrl] = useState('');
 
@@ -41,7 +41,7 @@ return (
         value={stock_id}
         placeholder="stock_id"
         onChange={(event) => {
-          setStock_id(event.target.value)
+          setStock_id(event.target.value);
           console.log(`1. 最新股票代號為${event.target.value}`);
           console.log(`2. 最新股票代號為${stock_id}`);
         }
