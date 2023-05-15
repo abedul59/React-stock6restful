@@ -4,7 +4,7 @@ import {useState} from 'react';
 
 
 const GetStock6Sign = () => {
-    //const [stock_id, setStock_id] = useState("");
+    const [stock_id, setStock_id] = useState("");
     const [stock_name, setStock_name] = useState("");
     const [url, setUrl] = useState('');
 
