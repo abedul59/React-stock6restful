@@ -12,7 +12,7 @@ const GetStock6Sign = () => {
         event.preventDefault();
         //setStock_id(stock_id);
         
-        setUrl(`https://stock6-restfulex.onrender.com/api/Stock6Sign202304/${stock_id}`);
+        setUrl(`https://stock6-restfulex.onrender.com/api/Stock6Sign202304/${event.target.value}`);
         console.log(`最新得到網址為${url}`);
         
         fetch(url) 
@@ -22,7 +22,8 @@ const GetStock6Sign = () => {
           console.log(cStockName);
           console.log(cNewestSeason);
         setStock_name(cStockName);
-        console.log(`最新得到股票名稱為為${stock_id}`);
+        console.log(`1. 最新得到股票名稱為為${event.target.value}`);
+        console.log(`2. 最新得到股票名稱為為${stock_id}`);
           
           
         });  
