@@ -1,6 +1,6 @@
 import React from "react";
 //import './App.css'
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
 
 const GetStock6Sign = () => {
@@ -45,11 +45,9 @@ const handleClick = () => {
           
           
         });  
-      
-
       };
 
-
+useEffect(handleClick,[url]);
 
       
 return (
