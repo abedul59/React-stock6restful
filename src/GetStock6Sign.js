@@ -45,7 +45,7 @@ const fetchData = () => {
 
 useEffect(fetchData,[url]);
 
-console.log({stock6data});
+//console.log({stock6data});
       
 return (
     <div>
@@ -78,7 +78,7 @@ return (
         <h1>{url}</h1>
         <h1>{stock_name}</h1>
         <h1>{newest_season}</h1>
-        //<h1>{stock6data}</h1>
+        <h1>{stock6data.cSign1}</h1>
     </div>
     </div>
   );
