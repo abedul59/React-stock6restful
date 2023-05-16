@@ -1,5 +1,6 @@
 import React from "react";
 //import './App.css'
+import TotalScore from './TotalScore'
 import {useState, useEffect} from 'react';
 
 
@@ -78,12 +79,10 @@ return (
         <h1>{url}</h1>
         <h1>{stock_name}</h1>
         <h1>{newest_season}</h1>
-        <h1>{stock6data.cSign1}</h1>
-        <h1>{stock6data.cSign2}</h1>
-        <h1>{stock6data.cSign3}</h1>
-        <h1>{stock6data.cSign4}</h1>
-        <h1>{stock6data.cSign5}</h1>
-        <h1>{stock6data.cSign6}</h1>
+
+        <TotalScore stock6data={stock6data} />
+
+        
     </div>
     </div>
   );
