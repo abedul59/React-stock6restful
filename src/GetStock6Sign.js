@@ -9,6 +9,9 @@ const GetStock6Sign = () => {
     const [stock_name, setStock_name] = useState("");
     const [newest_season, setNewest_season] = useState("");
 
+
+    const [stock6data, setStock6data] = useState(""); 
+
     const [url, setUrl] = useState('');
 
     const handleSubmit = (event) => {
@@ -32,6 +35,7 @@ const fetchData = () => {
 
         setStock_name(cStockName);
         setNewest_season(cNewestSeason);
+        setStock6data(response);
         //console.log(`1. 最新得到股票名稱為${event.target.value}`);
         //console.log(`2. 最新得到股票名稱為${stock_id}`);
           
@@ -73,6 +77,7 @@ return (
         <h1>{url}</h1>
         <h1>{stock_name}</h1>
         <h1>{newest_season}</h1>
+        <h1>{stock6data}</h1>
     </div>
     </div>
   );
