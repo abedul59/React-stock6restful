@@ -82,7 +82,8 @@ return (
         <h1>{newest_season}</h1>
 
         <TotalScore stock6data={stock6data} />
-        <Sign2Detail stock6data={stock6data} />
+        <br />
+        <Sign1Detail stock6data={stock6data} />
         
     </div>
     </div>
