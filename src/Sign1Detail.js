@@ -40,8 +40,16 @@ return (
         <td><h1>{props.stock6data.ca6N}</h1></td>
         <td><h1>{props.stock6data.cna6}</h1></td>
         </tr>
+        
+
+        <tr>
+        <td><h1>本年1-2月平均</h1></td>
+        <td><h1>{props.stock6data.cnluX_MoM}</h1></td>
+        </tr>
         </table>
+
     </div>
+
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 //import './App.css'
 import TotalScore from './TotalScore'
 import Sign1Detail from './Sign1Detail'
+import Sign2Detail from './Sign2Detail'
 import {useState, useEffect} from 'react';
 
 
@@ -84,7 +85,8 @@ return (
         <TotalScore stock6data={stock6data} />
         <br />
         <Sign1Detail stock6data={stock6data} />
-        
+        <br />
+        <Sign2Detail stock6data={stock6data} />        
     </div>
     </div>
   );
