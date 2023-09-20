@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 //import Menu from './Menu';
-import 'normalize.css';
 
 import { BrowserRouter } from "react-router-dom";
 
