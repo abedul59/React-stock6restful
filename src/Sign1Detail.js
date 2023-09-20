@@ -5,12 +5,15 @@ const Sign1Detail = (props) => {
 
       
 return (
-    <div>
+    <div className="container">
+
  
 
-    <div>
+    <div  className="sign1card">
         <table>
+
         <tr><td>營收指標</td></tr>
+
         <tr>
         <td><h1>{props.stock6data.ca1N}</h1></td>
         <td><h1>{props.stock6data.cna1}</h1></td>
@@ -42,8 +45,8 @@ return (
         </tr>
         
 
-        <tr>
-        <td><h1>本年1-2月平均</h1></td>
+        <tr><React.memo><td><h1>本年1-2月平均</h1></td></React.memo>
+        
         <td><h1>{props.stock6data.cnluX_MoM}</h1></td>
         </tr>
         </table>
