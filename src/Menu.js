@@ -12,7 +12,7 @@ const Menu = () => {
       <button onClick={() => changeRouter('/Mainpage')}>主頁</button>
       <button onClick={() => changeRouter('/GetIgBeauty')} >IG</button> 
       <button onClick={() => changeRouter('/GetPttBeauty')}>PTT</button>
-      <button onClick={() => changeRouter('/GetStock6Sign')}>Stock6Sign</button>
+      <button onClick={() => changeRouter('/GetStock6Sign2304')}>Stock6Sign</button>
       <button onClick={() => changeRouter('/GetStock6Sign2308')}>202308六大指標</button>
     </ul>
   )
