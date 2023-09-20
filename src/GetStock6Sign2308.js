@@ -6,7 +6,7 @@ import Sign2Detail from './Sign2Detail'
 import {useState, useEffect} from 'react';
 
 
-const GetStock6Sign = () => {
+const GetStock6Sign2308 = () => {
 
     const [stock_id, setStock_id] = useState("");
     const [stock_name, setStock_name] = useState("");
@@ -91,4 +91,4 @@ return (
     </div>
   );
 };
-export default GetStock6Sign;
+export default GetStock6Sign2308;

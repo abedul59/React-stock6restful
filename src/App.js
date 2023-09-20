@@ -29,7 +29,8 @@ function App() {
         <Route path="/mainpage" component={Mainpage} />
 	      <Route path="/getigbeauty" component={GetIgBeauty} />
 	      <Route path="/getpttbeauty" component={GetPttBeauty} />  
-	      <Route path="/getstock6sign" component={GetStock6Sign} /> 	        
+	      <Route path="/getstock6sign" component={GetStock6Sign} /> 
+	      <Route path="/getstock6sign2308" component={GetStock6Sign2308} /> 		  	        
 	    </Switch>
 	  </HashRouter>,
 	  </ThemeProvider>
