@@ -20,7 +20,7 @@ const GetStock6Sign = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         setStock_id(stock_id);        
-        setUrl(`https://stock6-restfulex.onrender.com/api/Stock6Sign202304/getstockinfo/${stock_id}`);          
+        setUrl(`https://stock6-restfulex.onrender.com/api/Stock6Sign202308/getstockinfo/${stock_id}`);          
         };
           
       
