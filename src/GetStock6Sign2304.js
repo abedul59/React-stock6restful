@@ -6,7 +6,7 @@ import Sign2Detail from './Sign2Detail'
 import {useState, useEffect} from 'react';
 
 
-const GetStock6Sign = () => {
+const GetStock6Sign2304 = () => {
 
     const [stock_id, setStock_id] = useState("");
     const [stock_name, setStock_name] = useState("");
@@ -20,7 +20,7 @@ const GetStock6Sign = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         setStock_id(stock_id);        
-        setUrl(`https://stock6-restfulex.onrender.com/api/Stock6Sign202308/getstockinfo/${stock_id}`);          
+        setUrl(`https://stock6-restfulex.onrender.com/api/Stock6Sign202304/getstockinfo/${stock_id}`);          
         };
           
       
@@ -91,4 +91,4 @@ return (
     </div>
   );
 };
-export default GetStock6Sign;
+export default GetStock6Sign2304;
