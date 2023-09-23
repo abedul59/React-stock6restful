@@ -3,7 +3,8 @@ import React from "react";
 
 const Sign3Detail = (props) => {
 
-      
+  let YoY1 = (parseFloat(props.stock6data.cc1)-parseFloat(props.stock6data.cc2))/parseFloat(props.stock6data.cc2); 
+
 return (
     <div>
  
@@ -44,7 +45,7 @@ return (
 
         <tr>
         <td><h1>y最新一季YoY</h1></td>
-        <td><h1></h1></td>
+        <td><h1>{YoY1}</h1></td>
         </tr>
         </table>
 
