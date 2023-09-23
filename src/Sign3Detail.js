@@ -2,9 +2,12 @@ import React from "react";
 //import './App.css'
 
 const Sign3Detail = (props) => {
-
+  let roundDecimal = function (val, precision) {
+    return Math.round(Math.round(val * Math.pow(10, (precision || 0) + 1)) / 10) / Math.pow(10, (precision || 0));
+  }
   let YoY1 = (parseFloat(props.stock6data.cc1)-parseFloat(props.stock6data.cc2))/parseFloat(props.stock6data.cc2); 
 
+  let YoY1p = roundDecimal(YoY1*100,2).toString() + '%'
 return (
     <div>
  
@@ -45,7 +48,7 @@ return (
 
         <tr>
         <td><h1>y最新一季YoY</h1></td>
-        <td><h1>{YoY1}</h1></td>
+        <td><h1>{YoY1p}</h1></td>
         </tr>
         </table>
 
