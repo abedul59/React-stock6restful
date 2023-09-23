@@ -3,6 +3,11 @@ import React from "react";
 
 const Sign1Detail = (props) => {
 
+  let roundDecimal = function (val, precision) {
+    return Math.round(Math.round(val * Math.pow(10, (precision || 0) + 1)) / 10) / Math.pow(10, (precision || 0));
+  }
+ 
+  let average6m = roundDecimal((parseFloat(props.stock6data.cna1)+parseFloat(props.stock6data.cna2)+parseFloat(props.stock6data.cna3)+parseFloat(props.stock6data.cna4)+parseFloat(props.stock6data.cna5)+parseFloat(props.stock6data.cna6))/6, 2);
       
 return (
     <div>
@@ -41,6 +46,11 @@ return (
         <td><h1>{props.stock6data.cna6}</h1></td>
         </tr>
         
+
+        <tr>
+        <td><h1>六個月平均</h1></td>
+        <td><h1>{average6m}</h1></td>
+        </tr>
 
         <tr>
         <td><h1>本年1-2月平均</h1></td>
