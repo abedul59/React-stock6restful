@@ -14,6 +14,7 @@ const Menu = () => {
       <button onClick={() => changeRouter('/GetPttBeauty')}>PTT</button>
       <button onClick={() => changeRouter('/GetStock6Sign2304')}>Stock6Sign2304</button>
       <button onClick={() => changeRouter('/GetStock6Sign2308')}>Stock6Sign2308</button>
+      <button onClick={() => changeRouter('/GetStock6Sign2402')}>Stock6Sign2402</button>
     </ul>
   )
 };
